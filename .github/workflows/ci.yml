@@ -3,6 +3,10 @@ name: CI
 on:
   pull_request:
     types: [opened, synchronize, reopened]
+  # Re-run CI when the base branch is updated (e.g. after a PR merges to main),
+  # so semantic merge conflicts are caught without requiring branches to be up to date.
+  push:
+    branches: [main]
 
 # Cancel in-progress runs for the same ref to save CI minutes
 concurrency:
