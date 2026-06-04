@@ -1,0 +1,20 @@
+{
+  "projects": {
+    "default": "test-cicd-90487"
+  },
+  "targets": {
+    "test-cicd-90487": {
+      "hosting": {
+        "production": [
+          "test-cicd-production"
+        ],
+        "staging": [
+          "test-cicd-staging"
+        ],
+        "main": [
+          "test-cicd-90487"
+        ]
+      }
+    }
+  }
+}
